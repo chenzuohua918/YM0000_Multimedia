@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="radio">Radio</string>
+    <string name="search">APS</string>
+    <string name="previous">Pre</string>
+    <string name="next">Next</string>
+    <string name="band">Band</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="fm">FM</string>
+    <string name="am">AM</string>
+    <string name="mhz">MHz</string>
+    <string name="khz">KHz</string>
+    <string name="long_distance">Remote</string>
+    <string name="short_distance">Local</string>
+    <string name="single_track">Single</string>
+    <string name="double_track">Stereo</string>
+    <string name="message_open_first">Please open radio first!</string>
+    <string name="message_try_later">Search is unfinished，please try later！</string>
+    <string name="search_fail">Search failure, please check antenna!</string>
+    <string name="search_interrupt">Search interrupt</string>
+    <string name="no_channel">No useful radios</string>
+    <string name="searching">Searching radios</string>
+    <string name="invalid_fm_frequency">Invalid FM channel，range（8750~10800）</string>
+    <string name="invalid_am_frequency">Invalid AM channel，range（531~1629）</string>
+
+</resources>

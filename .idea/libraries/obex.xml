@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="obex">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Multimedia/libs/obex.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

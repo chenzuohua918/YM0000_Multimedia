@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="module_gap">2dp</dimen>
+    <dimen name="top_right_button_size">62dp</dimen>
+    <dimen name="statusbar_height">53dp</dimen>
+    <dimen name="linear_left_marginTop">55dp</dimen>
+
+</resources>

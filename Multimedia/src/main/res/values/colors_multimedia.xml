@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_normal_color">#2b3164</color>
+    <color name="item_pressed_color">#111428</color>
+    <color name="bg_content_right">#9000</color>
+    <color name="bg_usb_normal">#03152f</color>
+    <color name="bg_usb_selected">#0f62d7</color>
+    <color name="divider_color">#313034</color>
+    <color name="usb_text_normal_color">#4f5c6e</color>
+    <color name="usb_text_selected_color">#fff</color>
+    <color name="bg_blue_normal">#0f62d7</color>
+
+</resources>

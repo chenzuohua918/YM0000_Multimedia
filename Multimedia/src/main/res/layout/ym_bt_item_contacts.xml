@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bt_contacts_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ym_bt_list_item_bg" >
+
+    <ImageView
+        android:layout_width="@dimen/ym_bt_list_item_width"
+        android:layout_height="@dimen/ym_bt_list_item_height" />
+
+    <com.semisky.ym_multimedia.ymbluetooth.widget.MarqueeTextView
+        android:id="@+id/tv_contacts_name"
+        android:layout_width="@dimen/ym_bt_list_item_text_maxlength"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ym_bt_list_item_gap_small"
+        android:ellipsize="end"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/ym_bt_color_dialog_button"
+        android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+    <TextView
+        android:id="@+id/tv_contacts_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ym_bt_list_item_gap_middle"
+        android:layout_marginRight="@dimen/ym_bt_list_item_gap_middle"
+        android:layout_toRightOf="@+id/tv_contacts_name"
+        android:ellipsize="end"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/ym_bt_color_dialog_button"
+        android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+</RelativeLayout>

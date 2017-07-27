@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/libs/vcard.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4c26892440c83aeadf8d2fbbdd7cd95cebc827be">
+        <dex dex="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/build/intermediates/pre-dexed/debug/vcard_c4b21267d76d03dcfcf0808060e076d295b151b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/libs/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/build/intermediates/pre-dexed/debug/glide-3.7.0_6ef3391945975d419b63bc32b71b7567b28a0cf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/libs/obex.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7b4111075b65ec8477185fc18780253281a88a9">
+        <dex dex="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/build/intermediates/pre-dexed/debug/obex_286a873d944b8bc6079800a62483d01bf3665c0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/libs/EventBus2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bd22c7476d00a86c87e0c6a90cb0ae2cf982532a">
+        <dex dex="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/build/intermediates/pre-dexed/debug/EventBus2.4_545f03a2deb217120ed771b87313846edb218e94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/libs/bt.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="010562dd961390c5af0ac2e2028e53f130932c52">
+        <dex dex="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/build/intermediates/pre-dexed/debug/bt_da3aa6b5c180b04e7d726e62175a2adc3380b9e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/libs/juniversalchardet-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="591d72211acc0b909b79c840e0b3ed9a0982d807">
+        <dex dex="/Users/Anter/AndroidStudioProjects/YM0000_Multimedia/Multimedia/build/intermediates/pre-dexed/debug/juniversalchardet-1.0.3_625ee6cd4734e2c2a20653a1d408008f284b9b2a.jar" />
+    </item>
+
+</items>

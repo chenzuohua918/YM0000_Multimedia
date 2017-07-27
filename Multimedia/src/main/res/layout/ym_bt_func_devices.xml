@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        style="@style/BtFragmentLayout" >
+
+        <ListView
+            android:id="@+id/lv_device_list"
+            style="@style/BtListViewStyle"
+            android:layout_above="@+id/ll_bottom_menu_bar"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_menu_bar"
+            style="@style/BtBottomBarLayout">
+
+            <ImageButton
+                style="@style/BtGrayBlueKeyBg"
+                android:id="@+id/ym_device_connect"
+                android:layout_weight="1"
+                android:src="@drawable/ym_bt_connect" />
+            <ImageButton
+                style="@style/BtGrayBlueKeyBg"
+                android:id="@+id/ym_device_disconnect"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:src="@drawable/ym_bt_disconnect" />
+            <ImageButton
+                style="@style/BtGrayBlueKeyBg"
+                android:id="@+id/ym_device_delete"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:src="@drawable/ym_bt_delete" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right_bar"
+            android:layout_width="@dimen/nl_bt_right_bar_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <com.semisky.ym_multimedia.ymbluetooth.widget.VerticalTextView
+                android:id="@+id/tv_right_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ym_bt_normal_gap"
+                android:background="@drawable/ym_bt_selector_rightbar_one"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/nl_bt_search_devices"
+                android:textColor="@color/ym_bt_color_search_buttom"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

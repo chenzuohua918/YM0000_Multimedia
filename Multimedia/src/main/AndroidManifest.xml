@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.semisky.ym_multimedia"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.semisky.ym_multimedia.radio.permission.READ_PERMISSION"
+        android:label="@string/app_name"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.broadcom.bt" />
+        <uses-library android:name="javax.obex" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="fontScale|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.semisky.ym_multimedia.multimedia.receiver.MultimediaReceiver" >
+            <intent-filter>
+                <data android:scheme="file" />
+
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.semisky.ym_multimedia.ymbluetooth.service.PbapService" >
+        </service>
+        <service android:name="com.semisky.ym_multimedia.music.service.MusicPlayService" >
+        </service>
+
+        <provider
+            android:name="com.semisky.ym_multimedia.radio.dao.ChannelContentProvider"
+            android:authorities="com.semisky.ym_multimedia.radio.dao.database"
+            android:exported="true"
+            android:multiprocess="true"
+            android:permission="com.semisky.ym_multimedia.radio.permission.READ_PERMISSION" >
+        </provider>
+
+        <receiver android:name=".ymbluetooth.receiver.BTBCReceiver" >
+            <intent-filter>
+
+                <!-- acc开关 -->
+                <action android:name="com.semisky.ACTION_ACC_STATUS" />
+                <!-- 上电广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 蓝牙配对 -->
+                <action android:name="android.bluetooth.device.action.FOUND" />
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED" />
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED" />
+                <action android:name="android.bluetooth.device.action.PAIRING_CANCEL" />
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+                <!-- 蓝牙拨打电话 -->
+                <action android:name="com.broadcom.bt.hfdevice.profile.action.CONNECTION_STATE_CHANGED" />
+                <action android:name="com.broadcom.bt.hfdevice.profile.action.CALL_STATE_CHANGED" />
+                <action android:name="com.broadcom.bt.hfdevice.profile.action.AUDIO_STATE_CHANGED" />
+                <action android:name="com.broadcom.bt.hfdevice.profile.action.WBS_STATE_CHANGED" />
+                <action android:name="com.broadcom.bt.hfdevice.profile.action.RING_EVENT" />
+                <action android:name="com.semisky.btphone.DISPLAY" />
+                <action android:name="com.semisky.ymbluetooth.dial" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.NaviOne.ActivityStatusBroadcast" />
+                <action android:name="com.cowin.phone3g.CALL_STATUS" />
+                <!-- 蓝牙电话簿 -->
+                <action android:name="com.musicactivity.playcode" />
+                <action android:name="com.callActivity.callcode" />
+                <!-- <action android:name="com.semisky.ymbluetooth.dial" /> -->
+                <action android:name="com.semisky.ymbluetooth.play" />
+                <action android:name="com.semisky.ymbluetooth.CallLog" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.bluetooth.device.action.PAIRING_CANCEL" />
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+                <action android:name="net.easyconn.bt.checkstatus" />
+                <action android:name="net.easyconn.a2dp.acquire" />
+                <action android:name="net.easyconn.a2dp.release" />
+                <action android:name="net.easyconn.app.quit" />
+                <action android:name="com.semisky.action.OnOff_BT" />
+                <action android:name="com.semisky.action.BT_MUSIC_LAUNCH" />
+                <!-- 蓝牙音乐 -->
+                <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED" />
+                <action android:name="android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED" />
+                <!-- 静音广播 -->
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+                <!-- 易联双屏互动 -->
+                <action android:name="net.easyconn.connection.break" />
+                <action android:name="net.easyconn.bt.checkstatus" />
+                <action android:name="net.easyconn.bt.connected" />
+                <action android:name="net.easyconn.bt.notconnected" />
+                <action android:name="net.easyconn.bt.connect" />
+                <action android:name="net.easyconn.a2dp.acquire" />
+                <action android:name="net.easyconn.a2dp.release" />
+                <action android:name="net.easyconn.app.quit" />
+                <action android:name="net.easyconn.bt.opened" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ymbluetooth.tests.FactoryTestBroadcastReceiver" >
+            <intent-filter>
+
+                <!-- 蓝牙配对 -->
+                <action android:name="SEMISKEY_BT_MATCHING" />
+                <!-- 蓝牙音乐 -->
+                <action android:name="SEMISKEY_BT_MUSIC" />
+                <!-- 联系人 -->
+                <action android:name="SEMISKEY_CONTACTPERSON" />
+                <!-- 通话记录 -->
+                <action android:name="SEMISKEY_BTRECORD" />
+                <!-- 蓝牙拨号 -->
+                <action android:name="SEMISKEY_BTCALL" />
+                <!-- 下一曲 -->
+                <action android:name="SEMISKEY_BTMUSICNEXT" />
+                <!-- 上一曲 -->
+                <action android:name="SEMISKEY_BTMUSICPREVIOUS" />
+                <!-- 播放 -->
+                <action android:name="SEMISKEY_BT_PLAY" />
+                <!-- 暂停 -->
+                <action android:name="SEMISKEY_BT_PAUSE" />
+            </intent-filter>
+        </receiver>
+         <!-- 收音机测试 -->
+        <receiver android:name=".radio.test.TestBroadcastReceiver">
+            <intent-filter>
+                <!-- 搜索 -->
+                <action android:name="SEMISKY_RA_SEARCH_ALL" />
+                <!-- 上一个 -->
+                <action android:name="SEMISKY_RA_SEARCH_PREVIOUS" />
+                <!-- 下一个 -->
+                <action android:name="SEMISKY_RA_SEARCH_NEXT" />
+                <!-- 波段 -->
+                <action android:name="SEMISKY_RA_BAND" />
+                <!-- 开关 -->
+                <action android:name="SEMISKY_RA_SWITCH" />
+                <!-- 近远程 -->
+                <action android:name="SEMISKY_RA_RADAR" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

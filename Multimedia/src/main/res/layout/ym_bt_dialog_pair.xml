@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/BtDialogLayout" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:background="@color/ym_bt_dialog_bg" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_title_size" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/rl_middle"
+            android:background="@color/ym_bt_dialog_dividing_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below="@id/rl_top"
+            android:background="@color/ym_bt_dialog_bg" >
+
+            <TextView
+                android:id="@+id/tv_bt_name_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_content_size" />
+            <TextView
+                android:id="@+id/tv_bt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_bt_name_tag"
+                android:layout_alignBaseline="@id/tv_bt_name_tag"
+                android:gravity="center"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_content_size" />
+            <TextView
+                android:id="@+id/tv_bt_pwd_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bt_name_tag"
+                android:layout_alignLeft="@id/tv_bt_name_tag"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_content_size" />
+            <TextView
+                android:id="@+id/tv_bt_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_bt_pwd_tag"
+                android:layout_below="@id/tv_bt_name_tag"
+                android:layout_alignBaseline="@id/tv_bt_pwd_tag"
+                android:gravity="center"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_content_size" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/ll_bottom"
+            android:background="@color/ym_bt_dialog_dividing_line"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/ym_bt_dialog_button_gap"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/BtDialogKeyBtn"
+                android:id="@+id/iv_bt_exit"
+                android:layout_weight="1"
+                android:text="@string/ym_bt_exit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

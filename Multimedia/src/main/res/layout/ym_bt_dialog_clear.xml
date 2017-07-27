@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/BtDialogLayout" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:gravity="center"
+            android:background="@color/ym_bt_dialog_bg" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_title_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below="@id/rl_top"
+            android:background="@color/ym_bt_dialog_bg" >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/ym_bt_black"
+                android:textSize="@dimen/ym_bt_dialog_content_size" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/ll_bottom"
+            android:background="@color/ym_bt_dialog_dividing_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/ym_bt_dialog_button_gap"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/BtDialogKeyBtn"
+                android:id="@+id/iv_bt_ok"
+                android:layout_weight="1"
+                android:text="@string/ym_bt_ok" />
+
+            <Button
+                style="@style/BtDialogKeyBtn"
+                android:id="@+id/iv_bt_confirm"
+                android:layout_weight="1"
+                android:text="@string/ym_bt_confirm" />
+
+            <Button
+                style="@style/BtDialogKeyBtn"
+                android:id="@+id/iv_bt_cancel"
+                android:layout_weight="1"
+                android:text="@string/ym_bt_cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

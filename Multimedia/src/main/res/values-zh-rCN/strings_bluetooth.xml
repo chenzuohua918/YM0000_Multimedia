@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--↓↓↓↓↓↓↓↓吉利项目遗留字串资源↓↓↓↓↓↓↓↓-->
+    <string name="nl_bt_synchro">同\n步</string>
+    <string name="nl_bt_clear_list">清\n空\n列\n表</string>
+    <string name="nl_bt_title">蓝牙电话</string>
+    <string name="nl_bt_search_devices">搜\n索\n蓝\n牙</string>
+    <string name="nl_bt_cautions">注  意</string>
+    <string name="nl_bt_sync_contacts">同步耗时较长，确定需要同步联系人？</string>
+    <string name="nl_bt_cancel_searching">取消搜索！</string>
+    <string name="nl_bt_search_warning">请暂停蓝牙音乐后再搜索蓝牙设备！</string>
+    <string name="nl_bt_third_incoming">插播来电</string>
+    <string name="nl_bt_on_hold">保持</string>
+    <!--↑↑↑↑↑↑↑↑吉利项目遗留字串资源↑↑↑↑↑↑↑↑-->
+
+    <!--↓↓↓↓↓↓↓↓云木项目字串资源↓↓↓↓↓↓↓↓-->
+    <string name="ym_bt_clear_list_msg">清空列表</string>
+    <string name="ym_bt_please_open_player"></string>
+    <string name="ym_bt_dialing">正在拨号</string>
+    <string name="ym_bt_incoming">来电...</string>
+    <string name="ym_bt_unpair_and_disconnect">要取消配对并断开连接吗？</string>
+    <string name="ym_bt_unknown">未知号码</string>
+    <string name="ym_bt_connected">已连接</string>
+    <string name="ym_bt_not_connected">未连接</string>
+    <string name="ym_bt_connecting">连接中</string>
+    <string name="ym_bt_pair_delete">确认删除蓝牙设备？</string>
+    <string name="ym_bt_app_name">YMBluetooth</string>
+    <string name="ym_bt_searching">搜\n索\n中</string>
+    <string name="ym_bt_dail">蓝牙电话</string>
+    <string name="ym_bt_contacts">联系人</string>
+    <string name="ym_bt_call_log">通话记录</string>
+    <string name="ym_bt_music">蓝牙音乐</string>
+    <string name="ym_bt_list">蓝牙列表</string>
+    <string name="ym_bt_settings">蓝牙设置</string>
+    <string name="ym_bt_confirm">确  认</string>
+    <string name="ym_bt_ok">确  定</string>
+    <string name="ym_bt_cancel">取  消</string>
+    <string name="ym_bt_delete_all_call_log">是否想要删除所有记录？</string>
+    <string name="ym_bt_delete_single_call_log">是否想要删除该记录？</string>
+    <string name="ym_bt_name">蓝牙名称</string>
+    <string name="ym_bt_password">蓝牙密码</string>
+    <string name="ym_bt_pair_name">设备名称：</string>
+    <string name="ym_bt_pair_password">配对密码：</string>
+    <string name="ym_bt_pair_tips">请连接蓝牙</string>
+    <string name="ym_bt_downloading_pb">正在下载电话簿</string>
+    <string name="ym_bt_linking">正在连接</string>
+    <string name="ym_bt_switch">蓝牙开关</string>
+    <string name="ym_bt_auto_connect">蓝牙自动连接</string>
+    <string name="ym_bt_auto_answer">自动接听</string>
+    <!--↑↑↑↑↑↑↑↑云木项目字串资源↑↑↑↑↑↑↑↑-->
+
+    <!--↓↓↓↓↓↓↓↓新增↓↓↓↓↓↓↓↓-->
+    <string name="ym_bt_exit">退出</string>
+    <string name="ym_bt_please_open">请打开蓝牙功能</string>
+    <string name="ym_bt_state_not_connected">蓝牙未连接</string>
+    <string name="ym_bt_state_connected">蓝牙已连接</string>
+    <string name="ym_bt_on_the_line">通话中...</string>
+    <string name="ym_bt_album">专辑：</string>
+    <string name="ym_bt_artist">演唱：</string>
+    <!--↑↑↑↑↑↑↑↑新增↑↑↑↑↑↑↑↑-->
+
+</resources>

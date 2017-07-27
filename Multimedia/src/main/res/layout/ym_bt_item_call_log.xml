@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bt_call_log_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/ym_bt_list_item_bg" >
+
+    <ImageView
+        android:layout_width="@dimen/ym_bt_list_item_width"
+        android:layout_height="@dimen/ym_bt_list_item_height" />
+
+    <ImageView
+        android:id="@+id/iv_log_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ym_bt_list_item_gap_small"
+        android:layout_marginRight="@dimen/ym_bt_list_item_gap_text"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_log_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_log_mark"
+        android:textSize="@dimen/ym_bt_norm_text_normal"
+        android:textColor="@color/ym_bt_color_list_item"
+        android:visibility="gone" />
+
+    <com.semisky.ym_multimedia.ymbluetooth.widget.MarqueeTextView
+        android:id="@+id/tv_log_phone"
+        android:layout_width="@dimen/ym_bt_list_item_text_maxlength"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_log_name"
+        android:ellipsize="end"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/ym_bt_color_dialog_button"
+        android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+    <TextView
+        android:id="@+id/tv_log_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/ym_bt_list_item_gap_middle"
+        android:gravity="right"
+        android:textColor="@color/ym_bt_color_dialog_button"
+        android:textSize="@dimen/ym_bt_norm_text_small" />
+
+</RelativeLayout>

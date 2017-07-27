@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LeftFullButton"> <!-- 左侧大块按钮 -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="LeftFullButtonRadio"> <!-- 左侧大块按钮 -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="LeftHalfButton"> <!-- 左侧小块按钮 -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TopRightImageButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/top_right_button_size</item>
+    </style>
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--↓↓↓↓↓↓↓↓吉利项目遗留布局参数↓↓↓↓↓↓↓↓-->
+
+    <!--DTMF拨号键盘宽度-->
+    <dimen name="nl_bt_call_keypad_width">400dp</dimen>
+    <dimen name="nl_bt_dialog_text_border_gap">15dp</dimen>
+
+    <!--联系人名称布局长度-->
+    <dimen name="nl_bt_contacts_name_width">130dp</dimen>
+    <!--↓↓↓↓↓↓↓↓以下无用↓↓↓↓↓↓↓↓-->
+    <!--右边按钮宽度-->
+    <dimen name="nl_bt_right_bar_width">65dp</dimen>
+    <!--通话弹框大小-->
+    <dimen name="nl_bt_dialog_width">400dp</dimen>
+    <dimen name="nl_bt_dialog_height">270dp</dimen>
+    <!--小对话弹框宽高相关参数-->
+    <dimen name="nl_bt_dialog_small_width">323dp</dimen>
+    <dimen name="nl_bt_dialog_second_width">450dp</dimen>
+    <dimen name="nl_bt_dialog_second_height">180dp</dimen>
+    <dimen name="nl_bt_dialog_small_height">190dp</dimen>
+    <!--↑↑↑↑↑↑↑↑吉利项目遗留布局参数↑↑↑↑↑↑↑↑-->
+
+
+    <!--↓↓↓↓↓↓↓↓间距宽高参数新增↓↓↓↓↓↓↓↓-->
+    <!--搜索键盘每条高度-->
+    <dimen name="ym_bt_search_keypad_item_height">45dp</dimen>
+    <dimen name="ym_bt_list_item_gap_text">10dp</dimen>
+    <dimen name="ym_bt_list_item_gap_small">50dp</dimen>
+    <dimen name="ym_bt_list_item_gap_middle">90dp</dimen>
+    <dimen name="ym_bt_list_item_gap_big">130dp</dimen>
+    <dimen name="ym_bt_dialog_button_top_height">90dp</dimen>
+    <dimen name="ym_bt_list_item_text_maxlength">220dp</dimen>
+    <!--对话框按钮间距-->
+    <dimen name="ym_bt_dialog_button_gap">3dp</dimen>
+    <dimen name="ym_bt_call_info_text_gap">3dp</dimen>
+    <dimen name="ym_bt_music_info_text_gap">1dp</dimen>
+    <dimen name="ym_bt_call_text_maxlength">160dp</dimen>
+    <dimen name="ym_bt_call_in_avatar_wh">130dp</dimen>
+    <!--↑↑↑↑↑↑↑↑间距宽高参数新增↑↑↑↑↑↑↑↑-->
+
+    <!--文字距离边框间距-->
+    <dimen name="ym_bt_text_border_gap">20dp</dimen>
+    <!--设置界面相关参数-->
+    <dimen name="ym_bt_settings_item_height">60dp</dimen>
+    <dimen name="ym_bt_settings_margin">50dp</dimen>
+    <dimen name="ym_bt_settings_text_size">28sp</dimen>
+    <!--列表单元宽度-->
+    <dimen name="ym_bt_list_item_width">30dp</dimen>
+    <!--列表单元高度-->
+    <dimen name="ym_bt_list_item_height">60dp</dimen>
+    <!--对话弹框大小-->
+    <dimen name="ym_bt_dialog_width">450dp</dimen>
+    <dimen name="ym_bt_dialog_height">250dp</dimen>
+
+    <!--加载弹框大小-->
+    <dimen name="ym_bt_progress_dialog_width">400dp</dimen>
+    <dimen name="ym_bt_progress_dialog_height">90dp</dimen>
+
+    <!--菜单文字距顶部距离-->
+    <dimen name="ym_bt_menu_text_padding_top">13dp</dimen>
+
+    <!--fragment功能按钮布局高度-->
+    <dimen name="ym_bt_func_button_layout_height">70dp</dimen>
+
+    <!--对话框按钮布局高度-->
+    <dimen name="ym_bt_dialog_button_layout_height">65dp</dimen>
+
+    <!--菜单宽度-->
+    <dimen name="ym_bt_menu_width">152dp</dimen>
+
+    <!--fragment边框内间距-->
+    <dimen name="ym_bt_fragment_border_gap">20dp</dimen>
+
+    <!--搜索按键间距-->
+    <dimen name="ym_bt_search_key_gap">2dp</dimen>
+
+    <!--搜索键盘错位间距-->
+    <dimen name="ym_bt_search_key_offset">39dp</dimen>
+
+    <!--搜索按键盘边框间距-->
+    <dimen name="ym_bt_search_border_gap">4dp</dimen>
+
+    <!--拨号按键间距-->
+    <dimen name="ym_bt_dial_key_gap">1dp</dimen>
+
+    <!--菜单间距-->
+    <dimen name="ym_bt_menu_gap">1dp</dimen>
+
+    <!--一般间距-->
+    <dimen name="ym_bt_normal_gap">2dp</dimen>
+
+    <!--键盘布局相关参数-->
+    <item name="ym_bt_search_keypad_weight_big" format="float" type="dimen">10</item>
+    <item name="ym_bt_search_keypad_weight_middle" format="float" type="dimen">17</item>
+    <item name="ym_bt_search_keypad_weight_small" format="float" type="dimen">18</item>
+
+    <!--↓↓↓↓↓↓↓↓文字大小参数↓↓↓↓↓↓↓↓-->
+    <!--菜单文字大小-->
+    <dimen name="ym_bt_menu_text_size">18sp</dimen>
+
+    <!--统一文字大小-->
+    <dimen name="ym_bt_norm_text_normal">24sp</dimen>
+    <dimen name="ym_bt_norm_text_small">18sp</dimen>
+    <dimen name="ym_bt_norm_text_tiny">14sp</dimen>
+    <dimen name="ym_bt_norm_text_big">32sp</dimen>
+
+    <!--拨号键盘文字大小-->
+    <dimen name="ym_bt_dial_text_size">36sp</dimen>
+    <!--蓝牙音乐标题文字大小-->
+    <dimen name="ym_bt_music_title_size">32sp</dimen>
+    <!--↑↑↑↑↑↑↑↑文字大小参数↑↑↑↑↑↑↑↑-->
+
+    <!--↓↓↓↓↓↓↓↓字体大小新增↓↓↓↓↓↓↓↓-->
+    <dimen name="ym_bt_dialog_title_size">32sp</dimen>
+    <dimen name="ym_bt_dialog_content_size">28sp</dimen>
+    <!--↑↑↑↑↑↑↑↑字体大小新增↑↑↑↑↑↑↑↑-->
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Size of the fastscroll hint letter -->
+    <dimen name="fastscroll_overlay_size">104dp</dimen>
+    <!-- Width of the fastscroll thumb -->
+    <dimen name="fastscroll_thumb_width">64dp</dimen>
+    <!-- Height of the fastscroll thumb -->
+    <dimen name="fastscroll_thumb_height">52dp</dimen>
+
+    <!-- activity_radio -->
+    <dimen name="btn_radar_distance_margin_left">25dp</dimen>
+    <dimen name="btn_radar_distance_drawable_padding">20dp</dimen>
+    <dimen name="btn_radar_distance_text_size">20sp</dimen>
+    <dimen name="btn_radar_track_margin_left">20dp</dimen>
+    <dimen name="btn_radar_track_text_size">20sp</dimen>
+
+    <!-- fragment_content -->
+    <dimen name="tv_type_margin_left">115px</dimen>
+    <dimen name="tv_type_text_size">35sp</dimen>
+    <dimen name="tv_frequency_text_size">80sp</dimen>
+    <dimen name="tv_unit_margin_left">115px</dimen>
+    <dimen name="tv_unit_text_size">35sp</dimen>
+    <dimen name="linear_seekbar_margin_top">30px</dimen>
+    <dimen name="tv_min_margin_left">30px</dimen>
+    <dimen name="tv_min_text_size">14sp</dimen>
+    <dimen name="tv_max_margin_left">30px</dimen>
+    <dimen name="tv_max_text_size">14sp</dimen>
+    <dimen name="seekbar_margin_left_right">15px</dimen>
+    <dimen name="seekbar_margin_top">10dp</dimen>
+    <dimen name="linear_scrollbar_height">3dp</dimen>
+    <dimen name="dividerHeight">2dp</dimen>
+    <dimen name="linear_scrollbar_margin_top">30dp</dimen>
+    <dimen name="lv_frequency_margin_top">1dp</dimen>
+
+    <!-- frequency_item -->
+    <dimen name="item_height">127px</dimen>
+    <dimen name="item_number_margin_left">8dp</dimen>
+    <dimen name="item_number_margin_top">8dp</dimen>
+    <dimen name="item_number_text_size">14sp</dimen>
+    <dimen name="item_frequency_text_size">30sp</dimen>
+
+    <!-- px -->
+    <dimen name="px4">4px</dimen>
+    <dimen name="px10">10px</dimen>
+    <dimen name="px14">14px</dimen>
+    <dimen name="px16">16px</dimen>
+    <dimen name="px20">20px</dimen>
+    <dimen name="px36">36px</dimen>
+    <dimen name="px44">44px</dimen>
+    <dimen name="px50">50px</dimen>
+    <dimen name="px70">70px</dimen>
+    <dimen name="px85">85px</dimen>
+    
+    
+</resources>

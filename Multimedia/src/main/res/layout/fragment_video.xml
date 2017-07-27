@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:semisky="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.semisky.ym_multimedia.video.view.VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.semisky.ym_multimedia.video.view.CurtainView
+        android:id="@+id/curtainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+
+    <com.semisky.ym_multimedia.common.view.MarqueeTextView
+        android:id="@+id/tv_notice"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="59dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="@dimen/content_left_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/module_gap"
+        android:layout_marginLeft="@dimen/module_gap"
+        android:layout_marginRight="@dimen/module_gap"
+        android:layout_marginTop="@dimen/linear_left_marginTop"
+        android:orientation="vertical">
+
+        <com.semisky.ym_multimedia.common.view.GradientButton
+            android:id="@+id/btn_switcher"
+            style="@style/LeftFullButton"
+            android:drawableTop="@drawable/icon_pause_selector"
+            semisky:endColor_normal="@color/green_big_end_normal"
+            semisky:endColor_pressed="@color/green_big_end_pressed"
+            semisky:startColor_normal="@color/green_big_start_normal"
+            semisky:startColor_pressed="@color/green_big_start_pressed" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/module_gap"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.semisky.ym_multimedia.common.view.GradientButton
+                android:id="@+id/btn_previous"
+                style="@style/LeftHalfButton"
+                android:drawableTop="@drawable/icon_previous_selector"
+                android:text="@string/previous_video"
+                semisky:endColor_normal="@color/blue_small_end_normal"
+                semisky:endColor_pressed="@color/blue_small_end_pressed"
+                semisky:startColor_normal="@color/blue_small_start_normal"
+                semisky:startColor_pressed="@color/blue_small_start_pressed" />
+
+            <com.semisky.ym_multimedia.common.view.GradientButton
+                android:id="@+id/btn_next"
+                style="@style/LeftHalfButton"
+                android:layout_marginLeft="@dimen/module_gap"
+                android:drawableTop="@drawable/icon_next_selector"
+                android:text="@string/next_video"
+                semisky:endColor_normal="@color/blue_small_end_normal"
+                semisky:endColor_pressed="@color/blue_small_end_pressed"
+                semisky:startColor_normal="@color/blue_small_start_normal"
+                semisky:startColor_pressed="@color/blue_small_start_pressed" />
+        </LinearLayout>
+
+        <com.semisky.ym_multimedia.common.view.GradientButton
+            android:id="@+id/btn_playmode"
+            style="@style/LeftFullButton"
+            android:layout_marginTop="@dimen/module_gap"
+            semisky:endColor_normal="@color/cyan_big_end_normal"
+            semisky:endColor_pressed="@color/cyan_big_end_pressed"
+            semisky:startColor_normal="@color/cyan_big_start_normal"
+            semisky:startColor_pressed="@color/cyan_big_start_pressed" />
+
+        <com.semisky.ym_multimedia.common.view.GradientButton
+            android:id="@+id/btn_sound"
+            style="@style/LeftFullButton"
+            android:layout_marginTop="@dimen/module_gap"
+            android:drawableTop="@drawable/icon_sound_selector"
+            android:text="@string/sound"
+            semisky:endColor_normal="@color/purple_big_end_normal"
+            semisky:endColor_pressed="@color/purple_big_end_pressed"
+            semisky:startColor_normal="@color/purple_big_start_normal"
+            semisky:startColor_pressed="@color/purple_big_start_pressed" />
+
+        <com.semisky.ym_multimedia.common.view.GradientButton
+            android:id="@+id/btn_list"
+            style="@style/LeftFullButton"
+            android:layout_marginTop="@dimen/module_gap"
+            android:drawableTop="@drawable/icon_list_selector"
+            android:text="@string/list"
+            semisky:endColor_normal="@color/orange_big_end_normal"
+            semisky:endColor_pressed="@color/orange_big_end_pressed"
+            semisky:startColor_normal="@color/orange_big_start_normal"
+            semisky:startColor_pressed="@color/orange_big_start_pressed" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/module_gap"
+        android:layout_marginRight="@dimen/module_gap"
+        android:layout_toRightOf="@id/linear_left"
+        android:background="#b000">
+
+        <TextView
+            android:id="@+id/tv_playtime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/default_video_clock"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sb_video"
+            android:layout_width="482dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="83dp"
+            android:max="0"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="24dp"
+            android:progressDrawable="@drawable/seekbar_progress_drawable"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="2dp" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/sb_video"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/default_video_clock"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_top_right"
+        android:layout_width="@dimen/content_right_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/statusbar_height"
+        android:orientation="horizontal"
+        android:padding="@dimen/module_gap">
+
+        <com.semisky.ym_multimedia.common.view.GradientImageButton
+            android:id="@+id/ib_radio"
+            style="@style/TopRightImageButton"
+            android:src="@drawable/icon_radio"
+            semisky:endColor_normal="@color/green_small_end_normal"
+            semisky:endColor_pressed="@color/green_small_end_pressed"
+            semisky:startColor_normal="@color/green_small_start_normal"
+            semisky:startColor_pressed="@color/green_small_start_pressed" />
+
+        <com.semisky.ym_multimedia.common.view.GradientImageButton
+            android:id="@+id/ib_music"
+            style="@style/TopRightImageButton"
+            android:layout_marginLeft="@dimen/module_gap"
+            android:src="@drawable/icon_music"
+            semisky:endColor_normal="@color/purple_small_end_normal"
+            semisky:endColor_pressed="@color/purple_small_end_pressed"
+            semisky:startColor_normal="@color/purple_small_start_normal"
+            semisky:startColor_pressed="@color/purple_small_start_pressed" />
+
+        <com.semisky.ym_multimedia.common.view.GradientImageButton
+            android:id="@+id/ib_bt_music"
+            style="@style/TopRightImageButton"
+            android:layout_marginLeft="@dimen/module_gap"
+            android:src="@drawable/icon_bt_music"
+            semisky:endColor_normal="@color/cyan_small_end_normal"
+            semisky:endColor_pressed="@color/cyan_small_end_pressed"
+            semisky:startColor_normal="@color/cyan_small_start_normal"
+            semisky:startColor_pressed="@color/cyan_small_start_pressed" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/linear_filemanager"
+        layout="@layout/layout_right_filemanager"
+        android:layout_width="@dimen/content_right_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/statusbar_height"
+        android:visibility="invisible" /> <!-- 这里用invisible，用GONE跑马灯第一次无效 -->
+
+</RelativeLayout>

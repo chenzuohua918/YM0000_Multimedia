@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dial_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_first_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/ym_bt_main_bg">
+
+        <!--数字弹框-->
+        <LinearLayout
+            android:id="@+id/ll_keypad_area"
+            android:layout_width="@dimen/nl_bt_call_keypad_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/ym_bt_img_dialkp_shadow"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_dial_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ym_bt_text_border_gap"
+                android:paddingRight="@dimen/ym_bt_text_border_gap"
+                android:singleLine="true"
+                android:ellipsize="start"
+                android:layout_margin="@dimen/ym_bt_dial_key_gap"
+                android:background="@color/ym_bt_dtmf_input_bg"
+                android:layout_weight="4"
+                android:textSize="@dimen/ym_bt_norm_text_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_1"
+                        android:text="@string/ym_bt_dial_1"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_4"
+                        android:text="@string/ym_bt_dial_4"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_7"
+                        android:text="@string/ym_bt_dial_7"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_star"
+                        android:text="@string/ym_bt_dial_star"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        style="@style/BtGrayBlueKeyBg"
+                        android:id="@+id/tv_private_mode"
+                        android:src="@drawable/ym_audio_switch"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_2"
+                        android:text="@string/ym_bt_dial_2"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_5"
+                        android:text="@string/ym_bt_dial_5"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_8"
+                        android:text="@string/ym_bt_dial_8"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_0"
+                        android:text="@string/ym_bt_dial_0"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        style="@style/BtGrayBlueKeyBg"
+                        android:id="@+id/btn_mute_switch"
+                        android:src="@drawable/ym_mute_switch"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_3"
+                        android:text="@string/ym_bt_dial_3"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_6"
+                        android:text="@string/ym_bt_dial_6"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_9"
+                        android:text="@string/ym_bt_dial_9"
+                        android:layout_weight="1" />
+
+                    <Button
+                        style="@style/BtDialKeyBtn"
+                        android:id="@+id/iv_dial_hash"
+                        android:text="@string/ym_bt_dial_hash"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        style="@style/BtRedKeyBg"
+                        android:id="@+id/ib_dial_hangup"
+                        android:layout_weight="1"
+                        android:src="@drawable/ym_hangup"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_first_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ym_bt_dialog_button_gap"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/ll_keypad_area"
+            android:layout_above="@+id/ll_first_bottom"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_bt_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                android:src="@drawable/ym_bt_img_profile" />
+
+            <TextView
+                android:id="@+id/tv_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                android:layout_below="@+id/iv_bt_avatar"
+                android:maxLines="1"
+                android:maxWidth="@dimen/ym_bt_call_text_maxlength"
+                android:ellipsize="end"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            <TextView
+                android:id="@+id/tv_first_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                android:layout_below="@+id/tv_first_name"
+                android:maxLines="1"
+                android:maxWidth="@dimen/ym_bt_call_text_maxlength"
+                android:ellipsize="end"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_first_number"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_first_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                    android:text="@string/ym_bt_on_the_line"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_first_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_first_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+            android:layout_toRightOf="@id/ll_keypad_area"
+            android:background="@drawable/ym_bt_callingbutton_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_first_hangup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_dial_hangup" />
+
+            <Button
+                android:id="@+id/btn_first_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_dial_pickup" />
+
+            <Button
+                android:id="@+id/btn_first_reject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ym_bt_dialog_button_gap"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_dial_reject" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--来电弹框-->
+    <RelativeLayout
+        style="@style/BtDialogLayout"
+        android:id="@+id/rl_smallin_dialog"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/ll_smallin_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/ll_smallin_bottom" >
+
+            <ImageView
+                android:id="@+id/iv_smallin_avatar"
+                android:layout_width="@dimen/ym_bt_call_in_avatar_wh"
+                android:layout_height="@dimen/ym_bt_call_in_avatar_wh"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ym_bt_img_profile" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ym_bt_text_border_gap"
+                android:layout_toRightOf="@id/iv_smallin_avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_smallin_name"
+                    android:layout_width="@dimen/ym_bt_call_text_maxlength"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/ym_bt_black"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_smallin_number"
+                    android:layout_width="@dimen/ym_bt_call_text_maxlength"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/ym_bt_black"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_smallin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                    android:visibility="gone"
+                    android:textColor="@color/ym_bt_black"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_smallin_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_call_info_text_gap"
+                    android:text="@string/ym_bt_incoming"
+                    android:textColor="@color/ym_bt_black"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_smallin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/ym_bt_dialog_button_gap"
+            android:orientation="horizontal">
+
+            <ImageButton
+                style="@style/BtBlueKeyBg"
+                android:id="@+id/btn_speaker_switch"
+                android:layout_weight="1"
+                android:src="@drawable/ym_bt_speaker_switch" />
+
+            <ImageButton
+                style="@style/BtGreenKeyBg"
+                android:id="@+id/btn_smallin_pickup"
+                android:layout_weight="1"
+                android:src="@drawable/ym_dial" />
+
+            <ImageButton
+                style="@style/BtRedKeyBg"
+                android:id="@+id/btn_smallin_reject"
+                android:layout_weight="1"
+                android:src="@drawable/ym_hangup" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_second_dialog"
+        android:layout_width="@dimen/nl_bt_dialog_second_width"
+        android:layout_height="@dimen/nl_bt_dialog_second_height"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ym_bt_popup_bg_base">
+
+        <RelativeLayout
+            android:id="@+id/rl_second_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ym_bt_dialog_button_gap"
+            android:layout_above="@+id/ll_second_bottom"
+            android:padding="@dimen/nl_bt_dialog_text_border_gap"
+            android:background="@drawable/ym_bt_calling_bg">
+
+            <TextView
+                android:id="@+id/tv_second_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/ym_bt_norm_text_big" />
+
+            <TextView
+                android:id="@+id/tv_second_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_second_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+            android:background="@drawable/ym_bt_callingbutton_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_second_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_dial_pickup" />
+
+            <Button
+                android:id="@+id/btn_second_reject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ym_bt_dialog_button_gap"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_dial_reject" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_switch_dialog"
+        android:layout_width="@dimen/nl_bt_dialog_width"
+        android:layout_height="@dimen/nl_bt_dialog_height"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ym_bt_popup_bg_base"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_switch_dialog1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ym_bt_dialog_button_gap"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_switch_top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/ll_switch_bottom1"
+                android:gravity="center"
+                android:background="@drawable/ym_bt_calling_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_switch_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_text_border_gap"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/ym_bt_norm_text_big" />
+
+                <TextView
+                    android:id="@+id/tv_switch_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_switch_bottom1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+                android:background="@drawable/ym_bt_callingbutton_bg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_switch_pickup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ym_bt_selector_dial_continue" />
+
+                <Button
+                    android:id="@+id/btn_switch_reject1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ym_bt_dialog_button_gap"
+                    android:layout_weight="1"
+                    android:background="@drawable/ym_bt_selector_dial_hangup" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_switch_dialog2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ym_bt_dialog_button_gap"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_switch_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/ll_switch_bottom2"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+                android:background="@drawable/ym_bt_calling_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_switch_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ym_bt_text_border_gap"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/ym_bt_norm_text_big" />
+
+                <TextView
+                    android:id="@+id/tv_switch_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_switch_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+                android:background="@drawable/ym_bt_callingbutton_bg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_switch_pickup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ym_bt_selector_dial_continue" />
+
+                <Button
+                    android:id="@+id/btn_switch_reject2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ym_bt_dialog_button_gap"
+                    android:layout_weight="1"
+                    android:background="@drawable/ym_bt_selector_dial_hangup" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+<!--小弹框-->
+
+    <RelativeLayout
+        android:id="@+id/rl_smallout_dialog"
+        android:layout_width="@dimen/nl_bt_dialog_small_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/nl_bt_dialog_text_border_gap"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_smallout_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ym_bt_calling_3rdparty_bg2" />
+
+        <LinearLayout
+            android:id="@+id/ll_smallout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/ll_smallout_bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_smallout_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            <TextView
+                android:id="@+id/tv_smallout_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_smallout_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_smallout_bg"
+            android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_smallout_hangup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/ym_bt_selector_small_hangup" />
+        </LinearLayout>
+    </RelativeLayout>
+<!--三方通话小弹框-->
+    <RelativeLayout
+        android:id="@+id/rl_kidin_dialog"
+        android:layout_width="@dimen/nl_bt_dialog_width"
+        android:layout_height="@dimen/nl_bt_dialog_small_height"
+        android:layout_marginTop="@dimen/nl_bt_dialog_text_border_gap"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ym_bt_calling_3rdparty_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_kidin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/ll_kidin_bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_kidin_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ym_bt_text_border_gap"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            <TextView
+                android:id="@+id/tv_kidin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_kidin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_kidin_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_small_pickup" />
+
+            <Button
+                android:id="@+id/btn_kidin_reject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ym_bt_dialog_button_gap"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_small_reject" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kidout_dialog"
+        android:layout_width="@dimen/nl_bt_dialog_small_width"
+        android:layout_height="@dimen/nl_bt_dialog_small_height"
+        android:layout_margin="@dimen/nl_bt_dialog_text_border_gap"
+        android:visibility="gone"
+        android:background="@drawable/ym_bt_calling_3rdparty_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_kidout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/ll_kidout_bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_kidout_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ym_bt_text_border_gap"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+            <TextView
+                android:id="@+id/tv_kidout_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="@dimen/ym_bt_norm_text_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_kidout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ym_bt_dialog_button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/ym_bt_dialog_button_gap"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_kidout_hangup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ym_bt_selector_small_hangup" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

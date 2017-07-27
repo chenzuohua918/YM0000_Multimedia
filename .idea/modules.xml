@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Multimedia/Multimedia.iml" filepath="$PROJECT_DIR$/Multimedia/Multimedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YM0000_Multimedia.iml" filepath="$PROJECT_DIR$/YM0000_Multimedia.iml" />
+    </modules>
+  </component>
+</project>

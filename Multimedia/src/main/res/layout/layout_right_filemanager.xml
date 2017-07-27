@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:semisky="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_content_right"
+    android:orientation="vertical"
+    android:padding="@dimen/module_gap" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rg_usb_height"
+        android:orientation="horizontal" >
+
+        <com.semisky.ym_multimedia.multimedia.view.UsbRadioButton
+            android:id="@+id/rb_usb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_usb_selector"
+            android:button="@null"
+            android:drawablePadding="@dimen/btn_usb_drawable_padding"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/btn_usb_padding_top"
+            android:text="@string/usb1"
+            android:textSize="@dimen/btn_usb_text_size"
+            semisky:mountedIconRes="@drawable/icon_usb1_selected"
+            semisky:mountedTextColor="@color/usb_text_selected_color"
+            semisky:unMountedIconRes="@drawable/icon_usb1_normal"
+            semisky:unMountedTextColor="@color/usb_text_normal_color" />
+
+        <com.semisky.ym_multimedia.multimedia.view.UsbRadioButton
+            android:id="@+id/rb_usb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/module_gap"
+            android:layout_weight="1"
+            android:background="@drawable/bg_usb_selector"
+            android:button="@null"
+            android:drawablePadding="@dimen/btn_usb_drawable_padding"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/btn_usb_padding_top"
+            android:text="@string/usb2"
+            android:textSize="@dimen/btn_usb_text_size"
+            semisky:mountedIconRes="@drawable/icon_usb2_selected"
+            semisky:mountedTextColor="@color/usb_text_selected_color"
+            semisky:unMountedIconRes="@drawable/icon_usb2_normal"
+            semisky:unMountedTextColor="@color/usb_text_normal_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_list_usb1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.semisky.ym_multimedia.multimedia.view.UsbRootDirectoryButton
+                android:id="@+id/root_directory1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/file_item_height"
+                android:background="@drawable/bg_file_item_selector"
+                android:drawableLeft="@drawable/icon_parent_directory"
+                android:drawablePadding="@dimen/root_directory_drawable_padding"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/root_directory_padding"
+                android:paddingRight="@dimen/root_directory_padding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/root_directory_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <ListView
+                android:id="@+id/lv_usb1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_list_usb2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.semisky.ym_multimedia.multimedia.view.UsbRootDirectoryButton
+                android:id="@+id/root_directory2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/file_item_height"
+                android:background="@drawable/bg_file_item_selector"
+                android:drawableLeft="@drawable/icon_parent_directory"
+                android:drawablePadding="@dimen/root_directory_drawable_padding"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/root_directory_padding"
+                android:paddingRight="@dimen/root_directory_padding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/root_directory_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <ListView
+                android:id="@+id/lv_usb2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

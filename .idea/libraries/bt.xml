@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Multimedia/libs/bt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ym_bt_gray">#315187</color>
+    <color name="ym_bt_red">#ff0000</color>
+    <color name="ym_bt_yellow">#e4b62b</color>
+    <color name="ym_bt_darkgray">#777777</color>
+    <color name="ym_bt_darktrans">#bb000000</color>
+
+
+    <color name="ym_bt_black">#000000</color>
+    <color name="ym_bt_white">#ffffff</color>
+
+    <!--DTMF输入框背景色-->
+    <color name="ym_bt_dtmf_input_bg">#21264d</color>
+
+    <!--主界面背景色-->
+    <color name="ym_bt_main_bg">#180b48</color>
+
+    <!--输入框背景色-->
+    <color name="ym_bt_edit_bg">#080920</color>
+
+    <!--对话框背景色-->
+    <color name="ym_bt_dialog_bg">#bdbcc7</color>
+
+    <!--对话弹框分割线-->
+    <color name="ym_bt_dialog_dividing_line">#767679</color>
+
+    <!--搜索键盘背景色-->
+    <color name="ym_bt_search_bg">#060b0d</color>
+
+    <!--列表单元配色-->
+    <color name="ym_bt_dividing_line">#34324a</color>
+    <color name="ym_bt_item_bg_normal">#0000</color>
+    <color name="ym_bt_item_bg_pressed">#1964d3</color>
+
+    <!--灰-->
+    <color name="ym_bt_bg_gray_normal">#4e5660</color>
+    <color name="ym_bt_bg_gray_pressed">#222222</color>
+    <!--灰蓝-->
+    <color name="ym_bt_bg_gray_blue_normal">#2c3364</color>
+    <color name="ym_bt_bg_gray_blue_pressed">#121427</color>
+    <!--红-->
+    <color name="ym_bt_bg_red_normal">#c81d29</color>
+    <color name="ym_bt_bg_red_pressed">#4a1d29</color>
+    <!--绿-->
+    <color name="ym_bt_bg_green_normal">#018e01</color>
+    <color name="ym_bt_bg_green_pressed">#001f07</color>
+    <!--蓝-->
+    <color name="ym_bt_bg_blue_normal">#0f62d7</color>
+    <color name="ym_bt_bg_blue_pressed">#031733</color>
+    <!--青-->
+    <color name="ym_bt_bg_cyan_normal">#028699</color>
+    <color name="ym_bt_bg_cyan_pressed">#001e26</color>
+    <!--取错英文名字-->
+    <color name="ym_bt_bg_pink_normal">#8f328a</color>
+    <color name="ym_bt_bg_pink_pressed">#1c0d22</color>
+    <!--紫-->
+    <color name="ym_bt_bg_voilet_normal">#8f328a</color>
+    <color name="ym_bt_bg_voilet_pressed">#1c0d22</color>
+    <!--橙-->
+    <color name="ym_bt_bg_orange_normal">#da4c26</color>
+    <color name="ym_bt_bg_orange_pressed">#2a100c</color>
+
+</resources>

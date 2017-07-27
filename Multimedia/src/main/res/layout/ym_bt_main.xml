@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:semisky="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/statusbar_height"
+    android:background="@color/ym_bt_main_bg" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/ym_bt_shadow"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/ym_bt_topbar_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_bt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/nl_bt_title"
+                android:textColor="@color/ym_bt_white"
+                android:textSize="@dimen/ym_bt_menu_text_size" />
+
+            <TextView
+                android:id="@+id/tv_bt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:textColor="@color/ym_bt_white"
+                android:textSize="@dimen/ym_bt_menu_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.semisky.ym_multimedia.ymbluetooth.widget.MutilRadioGroup
+                android:id="@+id/rg_menu"
+                android:layout_width="@dimen/ym_bt_menu_width"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    style="@style/BtMenuKeyBg"
+                    android:id="@+id/rb_menu_dail"
+                    android:drawableTop="@drawable/ym_bt_selector_menu_dail"
+                    android:background="@drawable/ym_bt_bg_green_selector"
+                    android:text="@string/ym_bt_dail" />
+
+                <RadioButton
+                    style="@style/BtMenuKeyBg"
+                    android:id="@+id/rb_menu_call_log"
+                    android:drawableTop="@drawable/ym_bt_selector_menu_call_log"
+                    android:background="@drawable/ym_bt_bg_blue_selector"
+                    android:text="@string/ym_bt_call_log" />
+
+                <RadioButton
+                    style="@style/BtMenuKeyBg"
+                    android:id="@+id/rb_menu_contacts"
+                    android:drawableTop="@drawable/ym_bt_selector_menu_contacts"
+                    android:background="@drawable/ym_bt_bg_cyan_selector"
+                    android:text="@string/ym_bt_contacts" />
+
+                <RadioButton
+                    style="@style/BtMenuKeyBg"
+                    android:id="@+id/rb_menu_music"
+                    android:drawableTop="@drawable/ym_bt_selector_menu_music"
+                    android:background="@drawable/ym_bt_bg_violet_selector"
+                    android:text="@string/ym_bt_music" />
+
+
+                <LinearLayout
+                    android:id="@+id/rg_settings_and_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    <RadioButton
+                        style="@style/BtMenuKeyBg"
+                        android:id="@+id/rb_menu_settings"
+                        android:drawableTop="@drawable/ym_bt_selector_menu_settings"
+                        android:background="@drawable/ym_bt_bg_orange_selector"
+                        android:text="@string/ym_bt_settings" />
+
+                    <RadioButton
+                        style="@style/BtMenuKeyBg"
+                        android:id="@+id/rb_menu_pair"
+                        android:drawableTop="@drawable/ym_bt_selector_menu_list"
+                        android:background="@drawable/ym_bt_bg_cyan_selector"
+                        android:text="@string/ym_bt_list" />
+
+                </LinearLayout>
+            </com.semisky.ym_multimedia.ymbluetooth.widget.MutilRadioGroup>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_bt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/ym_bt_nav_icon_playing_bt" />
+
+                <TextView
+                    android:id="@+id/tv_bt_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ym_bt_white"
+                    android:textSize="@dimen/ym_bt_menu_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="165dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ym_bt_selector_navi_menu" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@id/btn_home"
+                android:background="@drawable/ym_bt_selector_navi_back"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_top_right"
+        android:layout_width="@dimen/content_right_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px4"
+        >
+
+        <com.semisky.ym_multimedia.common.view.GradientImageButton
+            android:id="@+id/bt_ib_radio"
+            style="@style/TopRightImageButton"
+            android:src="@drawable/icon_radio"
+            semisky:endColor_normal="@color/green_small_end_normal"
+            semisky:endColor_pressed="@color/green_small_end_pressed"
+            semisky:startColor_normal="@color/green_small_start_normal"
+            semisky:startColor_pressed="@color/green_small_start_pressed" />
+
+        <com.semisky.ym_multimedia.common.view.GradientImageButton
+            android:id="@+id/bt_ib_music"
+            style="@style/TopRightImageButton"
+            android:layout_marginLeft="@dimen/module_gap"
+            android:src="@drawable/icon_music"
+            semisky:endColor_normal="@color/purple_small_end_normal"
+            semisky:endColor_pressed="@color/purple_small_end_pressed"
+            semisky:startColor_normal="@color/purple_small_start_normal"
+            semisky:startColor_pressed="@color/purple_small_start_pressed" />
+
+        <com.semisky.ym_multimedia.common.view.GradientImageButton
+            android:id="@+id/bt_ib_video"
+            style="@style/TopRightImageButton"
+            android:layout_marginLeft="@dimen/module_gap"
+            android:src="@drawable/icon_movie"
+            semisky:endColor_normal="@color/cyan_small_end_normal"
+            semisky:endColor_pressed="@color/cyan_small_end_pressed"
+            semisky:startColor_normal="@color/cyan_small_start_normal"
+            semisky:startColor_pressed="@color/cyan_small_start_pressed" />
+
+    </LinearLayout>
+
+</RelativeLayout>

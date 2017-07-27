@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="radio">收音机</string>
+    <string name="search">搜 索</string>
+    <string name="previous">上一个</string>
+    <string name="next">下一个</string>
+    <string name="band">波 段</string>
+    <string name="open">打 开</string>
+    <string name="close">关 闭</string>
+    <string name="long_distance">远程</string>
+    <string name="short_distance">近程</string>
+    <string name="single_track">单声道</string>
+    <string name="double_track">立体声</string>
+    <string name="message_open_first">请先打开开关再搜索！</string>
+    <string name="message_try_later">搜索未结束，请稍后再试！</string>
+    <string name="search_fail">搜索失败，请检查天线！</string>
+    <string name="search_interrupt">中断搜索！</string>
+    <string name="no_channel">没有有效电台</string>
+    <string name="searching">正在搜索频道</string>
+    <string name="search_total">本次搜台总数：</string>
+    <string name="invalid_fm_frequency">无效FM频点，范围（8750~10800）</string>
+    <string name="invalid_am_frequency">无效AM频点，范围（531~1629）</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photo">圖片</string>
+    <string name="music">音樂</string>
+    <string name="video">視頻</string>
+    <string name="play">播 放</string>
+    <string name="pause">暫 停</string>
+    <string name="previous_photo">上一張</string>
+    <string name="next_photo">下一張</string>
+    <string name="rotate_left">左翻轉</string>
+    <string name="rotate_right">右翻轉</string>
+    <string name="scale_big">放大</string>
+    <string name="scale_small">縮小</string>
+    <string name="list">媒體列表</string>
+    <string name="usb1">USB1</string>
+    <string name="usb2">USB2</string>
+    <string name="previous_music">上一曲</string>
+    <string name="next_music">下一曲</string>
+    <string name="playmode_circle_single">單曲循環</string>
+    <string name="playmode_circle_all">全部循環</string>
+    <string name="playmode_circle_folder">文件夾循環</string>
+    <string name="playmode_random">隨機播放</string>
+    <string name="album">專輯：</string>
+    <string name="artist">演唱：</string>
+    <string name="music_not_exists">該音樂文件不存在</string>
+    <string name="default_music_clock">00:00</string>
+    <string name="no_lyric">無歌詞信息</string>
+    <string name="previous_video">上一個</string>
+    <string name="next_video">下一個</string>
+    <string name="default_video_clock">0:00:00</string>
+    <string name="usb_in">檢測到USB設備</string>
+    <string name="usb_out">外接設備已拔出</string>
+    <string name="video_not_exists">該視頻文件不存在</string>
+    <string name="unknown_error">未知錯誤</string>
+    <string name="unsupported_file">文件不支持</string>
+    <string name="no_such_file">無相關媒體文件</string>
+    <string name="notice">提示</string>
+    <string name="speed_warning">行車過程中請勿觀看視頻</string>
+    <string name="go_on">繼續</string>
+    <string name="quit">退出</string>
+
+</resources>

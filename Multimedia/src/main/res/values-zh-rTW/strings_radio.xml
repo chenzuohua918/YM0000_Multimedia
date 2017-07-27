@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="radio">收音機</string>
+    <string name="search">搜索</string>
+    <string name="previous">上一個</string>
+    <string name="next">下一個</string>
+    <string name="band">波段</string>
+    <string name="open">打開</string>
+    <string name="close">關閉</string>
+    <string name="long_distance">遠程</string>
+    <string name="short_distance">近程</string>
+    <string name="single_track">單聲道</string>
+    <string name="double_track">立體聲</string>
+    <string name="message_open_first">請先打開開關再搜索！</string>
+    <string name="message_try_later">搜索未結束，請稍後再試！</string>
+    <string name="search_fail">搜索失敗，請檢查天線！</string>
+    <string name="search_interrupt">中斷搜索！</string>
+    <string name="no_channel">沒有有效電台</string>
+    <string name="searching">正在搜索頻道</string>
+    <string name="invalid_fm_frequency">無效FM頻點，範圍（8750~10800）</string>
+    <string name="invalid_am_frequency">無效FM頻點，範圍（531~1629）</string>
+
+</resources>

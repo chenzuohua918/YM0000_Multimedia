@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 绿色按钮背景 -->
+    <color name="green_big_start_normal">#058105</color>
+    <color name="green_big_end_normal">#009001</color>
+    <color name="green_big_start_pressed">#011d08</color>
+    <color name="green_big_end_pressed">#002007</color>
+    <color name="green_small_start_normal">#048104</color>
+    <color name="green_small_end_normal">#009000</color>
+    <color name="green_small_start_pressed">#011a01</color>
+    <color name="green_small_end_pressed">#001d00</color>
+    <!-- 蓝色按钮背景 -->
+    <color name="blue_big_start_normal">#0d56c1</color>
+    <color name="blue_big_end_normal">#0f64db</color>
+    <color name="blue_big_start_pressed">#031127</color>
+    <color name="blue_big_end_pressed">#03142c</color>
+    <color name="blue_small_start_normal">#0d56c1</color>
+    <color name="blue_small_end_normal">#0f64db</color>
+    <color name="blue_small_start_pressed">#031127</color>
+    <color name="blue_small_end_pressed">#03142c</color>
+    <!-- 青色按钮背景 -->
+    <color name="cyan_big_start_normal">#038096</color>
+    <color name="cyan_big_end_normal">#02879a</color>
+    <color name="cyan_big_start_pressed">#001a1e</color>
+    <color name="cyan_big_end_pressed">#001b1f</color>
+    <color name="cyan_small_start_normal">#16a6bd</color>
+    <color name="cyan_small_end_normal">#11b4ce</color>
+    <color name="cyan_small_start_pressed">#011e27</color>
+    <color name="cyan_small_end_pressed">#06232a</color>
+    <!-- 紫色按钮背景 -->
+    <color name="purple_big_start_normal">#983291</color>
+    <color name="purple_big_end_normal">#8d3288</color>
+    <color name="purple_big_start_pressed">#1e0a1d</color>
+    <color name="purple_big_end_pressed">#1c0a1b</color>
+    <color name="purple_small_start_normal">#983291</color>
+    <color name="purple_small_end_normal">#8d3188</color>
+    <color name="purple_small_start_pressed">#1e0a1d</color>
+    <color name="purple_small_end_pressed">#1d0a1c</color>
+    <!-- 橘红色按钮背景 -->
+    <color name="orange_big_start_normal">#d03d16</color>
+    <color name="orange_big_end_normal">#db4e28</color>
+    <color name="orange_big_start_pressed">#2a0c04</color>
+    <color name="orange_big_end_pressed">#2c1008</color>
+    <color name="orange_small_start_normal">#d03e18</color>
+    <color name="orange_small_end_normal">#dc4d26</color>
+    <color name="orange_small_start_pressed">#2a100c</color>
+    <color name="orange_small_end_pressed">#2c130f</color>
+
+</resources>

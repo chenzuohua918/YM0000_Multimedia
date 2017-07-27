@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/BtFragmentLayout"
+        android:orientation="vertical" >
+
+        <!--蓝牙名称-->
+        <RelativeLayout
+            style="@style/BtSettingsItemLayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ym_bt_name"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+
+            <TextView
+                android:id="@+id/tv_settings_bt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ym_bt_dividing_line"/>
+
+        </RelativeLayout>
+
+        <!--蓝牙密码-->
+        <RelativeLayout
+            style="@style/BtSettingsItemLayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ym_bt_password"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+
+            <TextView
+                android:id="@+id/tv_settings_bt_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ym_bt_dividing_line"/>
+
+        </RelativeLayout>
+
+        <!--蓝牙开关-->
+        <RelativeLayout
+            style="@style/BtSettingsItemLayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ym_bt_switch"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+
+            <CheckBox
+                android:id="@+id/tv_settings_bt_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:background="@drawable/ym_bt_selector_switch" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ym_bt_dividing_line"/>
+
+        </RelativeLayout>
+
+        <!--蓝牙自动连接-->
+        <RelativeLayout
+            style="@style/BtSettingsItemLayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ym_bt_auto_connect"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+
+            <CheckBox
+                android:id="@+id/tv_settings_bt_auto_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:background="@drawable/ym_bt_selector_switch" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ym_bt_dividing_line"/>
+
+        </RelativeLayout>
+
+        <!--自动接听-->
+        <RelativeLayout
+            style="@style/BtSettingsItemLayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ym_bt_auto_answer"
+                android:textSize="@dimen/ym_bt_settings_text_size" />
+
+            <CheckBox
+                android:id="@+id/tv_settings_bt_auto_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ym_bt_settings_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:background="@drawable/ym_bt_selector_switch" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ym_bt_dividing_line"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bluetooth_actionbar_back" type="id" />
+    <item name="bluetooth_actionbar_menu" type="id" />
+    <item name="bluetooth_actionbar_search" type="id" />
+    <item name="bluetooth_actionbar_all" type="id" />
+    <item name="bluetooth_actionbar_cancel" type="id" />
+    <item name="bluetooth_actionbar_ok" type="id" />
+    <item name="bluetooth_actionbar_paste" type="id" />
+
+
+</resources>

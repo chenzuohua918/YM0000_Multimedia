@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 图片后缀 -->
+    <string-array name="image_suffix">
+        <item>.png</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+        <item>.gif</item>
+    </string-array>
+    <!-- 音频后缀 -->
+    <string-array name="music_suffix">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ape</item>
+        <item>.ogg</item>
+        <item>.flac</item>
+        <item>.midi</item>
+        <item>.aif</item>
+        <item>.aifc</item>
+        <item>.aiff</item>
+        <item>.acm</item>
+        <item>.ra</item>
+        <item>.aac</item>
+    </string-array>
+    <!-- 视频后缀 -->
+    <string-array name="video_suffix">
+        <item>.mp4</item>
+        <item>.avi</item>
+        <item>.mpeg</item>
+        <item>.flv</item>
+        <item>.3gp</item>
+        <item>.3g2</item>
+        <item>.mov</item>
+        <item>.mpe</item>
+        <item>.asx</item>
+        <item>.m4v</item>
+        <item>.ts</item>
+        <item>.mpg</item>
+        <item>.vob</item>
+        <item>.bup</item>
+        <item>.ifo</item>
+        <item>.vop</item>
+        <item>.mkv</item>
+        <item>.rmvb</item>
+        <item>.rm</item>
+    </string-array>
+    <!-- 歌词后缀 -->
+    <string-array name="lyric_suffix">
+        <item>.lrc</item>
+    </string-array>
+
+</resources>

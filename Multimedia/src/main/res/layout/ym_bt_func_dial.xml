@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/BtFragmentLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="5"
+            android:background="@color/ym_bt_edit_bg"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_dial_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ym_bt_text_border_gap"
+                android:layout_marginRight="@dimen/ym_bt_text_border_gap"
+                android:singleLine="true"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:textSize="@dimen/ym_bt_dial_text_size" />
+        </LinearLayout>
+
+        <!--拨号键盘-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="1px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_1"
+                    android:text="@string/ym_bt_dial_1"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_4"
+                    android:text="@string/ym_bt_dial_4"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_7"
+                    android:text="@string/ym_bt_dial_7"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_star"
+                    android:text="@string/ym_bt_dial_star"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_2"
+                    android:text="@string/ym_bt_dial_2"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_5"
+                    android:text="@string/ym_bt_dial_5"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_8"
+                    android:text="@string/ym_bt_dial_8"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_0"
+                    android:text="@string/ym_bt_dial_0"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_3"
+                    android:text="@string/ym_bt_dial_3"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_6"
+                    android:text="@string/ym_bt_dial_6"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_9"
+                    android:text="@string/ym_bt_dial_9"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_hash"
+                    android:text="@string/ym_bt_dial_hash"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageButton
+                    style="@style/BtGrayBlueKeyBg"
+                    android:id="@+id/iv_dial_del"
+                    android:layout_weight="3"
+                    android:src="@drawable/ym_dial_delete" />
+
+                <Button
+                    style="@style/BtDialKeyBtn"
+                    android:id="@+id/iv_dial_plus"
+                    android:text="@string/ym_bt_dial_plus"
+                    android:layout_weight="3" />
+
+                <ImageButton
+                    style="@style/BtGreenKeyBg"
+                    android:id="@+id/iv_dial_call"
+                    android:layout_weight="2"
+                    android:src="@drawable/ym_dial" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

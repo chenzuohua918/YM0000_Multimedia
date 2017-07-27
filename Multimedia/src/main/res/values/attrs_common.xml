@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GradientView"> <!-- 渐变色背景按钮 -->
+        <attr name="startColor_normal" format="reference|color" /> <!-- 不按压起始颜色 -->
+        <attr name="endColor_normal" format="reference|color" /> <!-- 不按压结束颜色 -->
+        <attr name="startColor_pressed" format="reference|color" /> <!-- 按压起始颜色 -->
+        <attr name="endColor_pressed" format="reference|color" /> <!-- 按压结束颜色 -->
+        <attr name="direction"> <!-- 渐变方向 -->
+            <enum name="left_right" value="0" /> <!-- 从左到右 -->
+            <enum name="top_bottom" value="1" /> <!-- 从上到下 -->
+            <enum name="right_left" value="2" /> <!-- 从右到左 -->
+            <enum name="bottom_top" value="3" /> <!-- 从下到上 -->
+        </attr>
+    </declare-styleable>
+
+</resources>
